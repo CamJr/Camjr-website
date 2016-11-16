@@ -1,0 +1,66 @@
+@font-face {
+    font-family: "Munro";
+    src: url("//db.onlinewebfonts.com/t/7797f6229b01fd22c7f0d6a5410db009.eot");
+    src: url("//db.onlinewebfonts.com/t/7797f6229b01fd22c7f0d6a5410db009.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/7797f6229b01fd22c7f0d6a5410db009.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/7797f6229b01fd22c7f0d6a5410db009.woff") format("woff"), url("//db.onlinewebfonts.com/t/7797f6229b01fd22c7f0d6a5410db009.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/7797f6229b01fd22c7f0d6a5410db009.svg#Munro") format("svg");
+}
+
+body {
+    font-family: munro;
+}
+
+
+h1 {
+    font-size: 50px
+}
+
+h2 {
+    font-size: 32px
+}
+
+p {
+    font-size: 22px
+}
+
+
+/*  main */
+
+.parallax-container {
+  height: 300px;
+}
+
+.clear{
+  height: 150px;
+}
+
+.right{
+margin-right: -20%;
+margin-top: 25%;
+}
+
+/* footer  */
+
+footer {
+    max-width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 100
+}
+
+.red-text, .yellow-text, .green-text, .blue-text {
+    font-size: 32px;
+}
+
+.droite {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul a:hover {
+    background-color: rgba(0, 0, 0, 0);
+    text-decoration: underline;
+}
+
+.test{
+  background-color: #FAC51C;
+
+}

@@ -1,0 +1,39 @@
+<footer>
+    <div class="navbar-fixed">
+        <nav class="z-depth-0 white col s12">
+                <ul class="droite">
+                    <li>
+                        <a onclick="redFunction()" class="red-text">red</a>
+                    </li>
+                    <li>
+                        <a onclick="yellowFunction()" class="active yellow-text">yellow</a>
+                    </li>
+                    <li>
+                        <a onclick="greenFunction()" class="green-text">green</a>
+                    </li>
+                    <li>
+                        <a onclick="blueFunction()" class="blue-text">blue</a>
+                    </li>
+                </ul>
+    </nav>
+</div>
+</footer>
+
+<script type="text/javascript">
+
+  $(".red-text").on("click", function() {
+      $(".conteneur").css("background", "#D14841");
+  });
+
+  $(".active.yellow-text").on("click", function() {
+      $(".conteneur").css("background", "#FAC51C");
+  });
+
+  $(".green-text").on("click", function() {
+      $(".conteneur").css("background", "#00A885");
+  });
+  $(".blue-text").on("click", function() {
+      $(".conteneur").css("background", "#2969B0");
+  });
+
+</script>
