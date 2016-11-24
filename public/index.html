@@ -15,19 +15,28 @@
         <link href="//db.onlinewebfonts.com/c/7797f6229b01fd22c7f0d6a5410db009?family=Munro" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" href="assets/css/style.css">
 
+
     </head>
-    <body class="pageWrapper">
+    <body>
 
         <ng-include src="'views/navbar.html'"></ng-include>
 
-        <div class="container">
+        <div class="row">
             <ng-view></ng-view>
       </div>
 
         <ng-include src="'views/footer.html'"></ng-include>
+        <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
 
         <script src="vendor/jquery/dist/jquery.min.js"></script>
-        <script src="js/jquery.alton.min.js"></script>
+        <!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
+        <script src="vendors/jquery.easings.min.js"></script>
+
+
+        <!-- This following line is only necessary in the case of using the plugin option `scrollOverflow:true` -->
+        <script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
+
+        <script type="text/javascript" src="jquery.fullPage.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
 
         <script src="vendor/angular/angular.min.js"></script>

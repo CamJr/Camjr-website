@@ -1,18 +1,27 @@
 <footer>
     <div class="navbar-fixed">
         <nav class="z-depth-0 white col s12">
-                <ul class="droite">
+                <ul class="colorfooter">
+                  <li>
+                    <a class="blue-text">blue</a>
+                  </li>
+                  <p class="slash">
+                    /
+                  </p>
+                  <li>
+                    <a class="green-text">green</a>
+                  </li>
+                  <p class="slash">
+                    /
+                  </p>
                     <li>
-                        <a onclick="redFunction()" class="red-text">red</a>
+                        <a class="yellow-text">yellow</a>
                     </li>
+                    <p class="slash">
+                      /
+                    </p>
                     <li>
-                        <a onclick="yellowFunction()" class="active yellow-text">yellow</a>
-                    </li>
-                    <li>
-                        <a onclick="greenFunction()" class="green-text">green</a>
-                    </li>
-                    <li>
-                        <a onclick="blueFunction()" class="blue-text">bleu</a>
+                      <a class="red-text">red</a>
                     </li>
                 </ul>
     </nav>
@@ -21,19 +30,23 @@
 
 <script type="text/javascript">
 
-  $(".red-text").on("click", function() {
-      $(".container").css("background", "#D14841");
-  });
-
-  $(".active.yellow-text").on("click", function() {
-      $(".container").css("background", "#FAC51C");
-  });
-
-  $(".green-text").on("click", function() {
-      $(".container").css("background", "#00A885");
-  });
   $(".blue-text").on("click", function() {
-      $(".container").css("background", "#2969B0");
+    $(".row").css("background", "#2969B0");
+    $("body").css("color", "white");
+  });
+  $(".green-text").on("click", function() {
+    $(".row").css("background", "#00A885");
+    $("body").css("color", "black");
+  });
+
+  $(".yellow-text").on("click", function() {
+      $(".row").css("background", "#ffeb3b");
+      $("body").css("color", "black");
+  });
+
+  $(".red-text").on("click", function() {
+    $(".row").css("background", "#D14841");
+    $("body").css("color", "white");
   });
 
 </script>

@@ -8,36 +8,59 @@ body {
     font-family: munro;
 }
 
-.container{
-  background-color: #D14841;
+.row{
+  background-color: #00A885;
+    margin-left: 70px;
+    margin-right: 70px;
 }
 
 h1 {
-    font-size: 50px
+    font-size: 50px;
 }
 
 h2 {
-    font-size: 32px
+    font-size: 32px;
 }
 
 p {
-    font-size: 22px
+    font-size: 22px;
+    color: black;
 }
 
-
-/*  main */
-
-.parallax-container {
-  height: 300px;
+.navbar-fixed1 {
+    position: relative;
+     height: 0px;
+    z-index: 997;
 }
+.fp-controlArrow.fp-next {
+    right: -30px!important;
+    border-width: 20px 0 20px 20px!important;
+    border-color: transparent transparent transparent black!important;
+}
+
+.fp-controlArrow.fp-prev {
+    left: -30px!important;
+    width: 0;
+    border-width: 20px 20px 20px 0!important;
+    border-color: transparent black transparent transparent!important;
+}
+/*  main
+
+.pagebio{
+  margin-top : vh;
+}
+
+.stat{
+  margin-top : 50vh;
+}
+*/
+.socialogo{
+padding: 10px
+}
+
 
 .clear{
   height: 150px;
-}
-
-.right{
-margin-right: -20%;
-margin-top: 25%;
 }
 
 /* footer  */
@@ -49,11 +72,12 @@ footer {
     z-index: 100
 }
 
+
 .red-text, .yellow-text, .green-text, .blue-text {
-    font-size: 32px;
+    font-size: 40px;
 }
 
-.droite {
+.colorfooter {
     display: flex;
     justify-content: center;
 }
@@ -62,8 +86,57 @@ nav ul a:hover {
     background-color: rgba(0, 0, 0, 0);
     text-decoration: underline;
 }
+.slash{
+  margin-top: 2px;
+}
 
-.test{
-  background-color: #FAC51C;
 
+
+/* media  */
+
+
+@media (max-width: 600px) {
+    .row {
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom:0;    }
+
+      .red-text, .yellow-text, .green-text, .blue-text {
+          font-size: 25px;
+      }
+}
+
+
+
+
+/* Histogram  */
+
+
+.chart {
+  display: table;
+  table-layout: fixed;
+  width: 60%;
+  max-width: 700px;
+  height: 200px;
+  margin: 0 auto;
+  background-size: 100% 50px;
+  background-position: left top;
+}
+.chart li {
+  display: table-cell;
+  vertical-align: bottom;
+  height: 400px;
+}
+.chart span {
+  margin: 0 1em;
+  display: block;
+  background: gold;
+  animation: draw 2s ease-in-out;
+}
+
+
+@keyframes draw {
+  0% {
+    height: 0;
+  }
 }

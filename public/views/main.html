@@ -1,51 +1,79 @@
-<section class="full">
-    <div class="slide">
-        <br>
-        <br>
+<div id="fullpage">
+    <div class="section">
+
         <h1 class="center-align">CAMJR WEBSITE</h1>
         <h2 class="center-align">
             Couteau Suisse du web
         </h2>
+        <div class="center-align">
+            <img class="socialogo" src="assets/img/linkedin.png" alt="linkedin"/>
+            <img class="socialogo" src="assets/img/github.png" alt="github"/>
+            <img class="socialogo" src="assets/img/youtube.png" alt="youtube"/>
+        </div>
+        <div class="center-align">
+            <div class="test">
+
+                <p>
+                    USE YOUR KEYBOARD
+                </p>
+                <img class="socialogo" src="assets/img/left-arrow.png" alt="linkedin"/>
+                <img class="socialogo" src="assets/img/right-arrow.png" alt="github"/>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
         <p class="center-align">
+            Je suis passionné par le web. Mon objectif professionnel est de devenir développeur Web.
+            <br>
             Actuellement étudiant à la Wild Code School sur le site de La loupe du 5 septembre 2016 jusqu'au 3 février 2017.
             <br>
-            Je suis ouvert à toute opportunité de stage de fin d'études dans ce domaine.
-            <br>
-            Mon objectif professionnel est de devenir développeur Web. Je suis un grand passionné de création numérique ( création de site web, photographie, vidéographie, graphisme...)
+            Je suis ouvert à toute opportunité de stage.
         </p>
         <div class="center-align">
             <img src="assets/img/robot.png" alt="robot"/>
         </div>
     </div>
 
-    <div class="slide">
-      <div id="film_roll">
-        <div>
-          <a><img src="assets/img/robot.png"> </a>
+    <div class="section">
+
+        <div class="slide">
+
+            <div class="photo">
+                <img class="responsive-img" src="assets/img/chateau.jpg" alt="robot"/>
+
+            </div>
         </div>
-        <div>
-          <a><img src="assets/img/robot.png"> </a>
+
+        <div class="slide">
+
+            <div class="photo">
+                <img class="responsive-img" src="assets/img/rue.jpg" alt="robot"/>
+
+            </div>
         </div>
-        <div>
-          <a><img src="assets/img/robot.png"> </a>
+
+        <div class="slide">
+
+            <div class="photo">
+                <img class="responsive-img" src="assets/img/river.jpg" alt="robot"/>
+
+            </div>
         </div>
-        <div>
-          <a><img src="assets/img/robot.png"> </a>
-        </div>
-      </div>
+
     </div>
 
-</section>
+    <div class="section">
+      <video class="responsive-video" controls src="assets/img/clip.mp4" type="video/mp4"></video>
+  </div>
 
-<div class="clear"></div>
+</div>
+
+<!--
+<div class="clear"></div> -->
 
 <script type="text/javascript">
-    $(document).alton({
-        fullSlideContainer: 'full', // Tell Alton the full height container
-        singleSlideClass: 'slide', // Tell Alton the full height slide class
-        useSlideNumbers: true, // Set to false if you don't want to use pagination
-        slideNumbersBorderColor: 'black', // Set the outside color of the pagination items (also used for active)
-        slideNumbersColor: 'transparent', // Set the inner color of the pagination items (not active)
-        bodyContainer: 'pageWrapper', // Tell Alton the body class
+    $(document).ready(function() {
+        $('#fullpage').fullpage();
     });
 </script>
