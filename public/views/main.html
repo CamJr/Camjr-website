@@ -1,25 +1,26 @@
 <div id="fullpage">
     <div class="section">
-
         <h1 class="center-align">CAMJR WEBSITE</h1>
         <h2 class="center-align">
             Couteau Suisse du web
         </h2>
         <div class="center-align">
-            <img class="socialogo" src="assets/img/linkedin.png" alt="linkedin"/>
-            <img class="socialogo" src="assets/img/github.png" alt="github"/>
-            <img class="socialogo" src="assets/img/youtube.png" alt="youtube"/>
+            <i class="fa fa-linkedin fa-3x socialogog" aria-hidden="true"></i>
+            <i class="fa fa-youtube fa-3x socialogog" aria-hidden="true"></i>
+            <i class="fa fa-github fa-3x socialogog" aria-hidden="true"></i>
         </div>
-        <div class="center-align">
-            <div class="test">
 
-                <p>
-                    USE YOUR KEYBOARD
-                </p>
-                <img class="socialogo" src="assets/img/left-arrow.png" alt="linkedin"/>
-                <img class="socialogo" src="assets/img/right-arrow.png" alt="github"/>
+        <div class="center-align">
+            <p>
+                USE YOUR KEYBOARD
+            </p>
+            <div class="row">
+                <i class="fa fa-arrow-up fa-2x" aria-hidden="true"></i>
             </div>
+            <i class="fa fa-arrow-down fa-2x" aria-hidden="true"></i>
+
         </div>
+
     </div>
 
     <div class="section">
@@ -28,17 +29,94 @@
             <br>
             Actuellement étudiant à la Wild Code School sur le site de La loupe du 5 septembre 2016 jusqu'au 3 février 2017.
             <br>
-            Je suis ouvert à toute opportunité de stage.
+            Je suis ouvert à toute opportunité.
         </p>
         <div class="center-align">
-            <img src="assets/img/robot.png" alt="robot"/>
+            <i class="fa fa-android fa-4x" aria-hidden="true"></i>
         </div>
+
+    </div>
+
+    <div class="section">
+        <div class="progress">
+            <div class="determinate" style="width: 90%">
+                <p class="progress_titles">HTML/CSS</p>
+            </div>
+        </div>
+
+        <div class="progress">
+            <div class="determinate" style="width: 85%">
+                <p class="progress_titles">javascript</p>
+            </div>
+        </div>
+
+        <div class="progress">
+            <div class="determinate" style="width: 75%">
+                <p class="progress_titles">Angular</p>
+            </div>
+        </div>
+
+        <div class="progress">
+            <div class="determinate" style="width: 85%">
+                <p class="progress_titles">Suite Adobe</p>
+            </div>
+        </div>
+
     </div>
 
     <div class="section">
 
-        <div class="slide">
 
+      <div class="slide">
+          <div class="row">
+              <div class="col s6 offset-s3">
+                  <div class="card ">
+                      <div class="card-image">
+                          <img src="assets/img/hopital.jpg">
+                      </div>
+                      <div class="card-action center-align">
+                        <span class="card-title black-text">Movember - Hackathon 31H</span>
+                      </div>
+
+                      <div class="card-content center-align">
+                          <p class="black-text">Création d'une application web permettant de poster votre plus belle moustache dans le cadre du mouvement “movember”.</p>
+                      </div>
+
+                      <div class="card-action">
+                          <a href="https://github.com/CamJr/Hackathon-Movember">Github</a>
+                          <a href="#">This is a link</a>
+
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="slide">
+          <div class="row">
+              <div class="col s6 offset-s3">
+                  <div class="card ">
+                      <div class="card-image">
+                          <img src="assets/img/hopital.jpg">
+                          <span class="card-title black-text">Card Title</span>
+                      </div>
+                      <div class="card-content">
+                          <p class="black-text">I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                      </div>
+                      <div class="card-action">
+                          <a href="#">This is a link</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+
+      </div>
+
+    <div class="section">
+
+        <div class="slide">
             <div class="photo">
                 <img class="responsive-img" src="assets/img/chateau.jpg" alt="robot"/>
 
@@ -59,21 +137,17 @@
                 <img class="responsive-img" src="assets/img/river.jpg" alt="robot"/>
 
             </div>
+
         </div>
 
     </div>
 
-    <div class="section">
-      <video class="responsive-video" controls src="assets/img/clip.mp4" type="video/mp4"></video>
-  </div>
+    <script type="text/javascript">
 
-</div>
+        $(document).ready(function() {
+            $('#fullpage').fullpage({navigation: true});
+        });
+    </script>
 
-<!--
+    <!--
 <div class="clear"></div> -->
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#fullpage').fullpage();
-    });
-</script>

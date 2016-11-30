@@ -1,21 +1,21 @@
 @font-face {
-    font-family: "Munro";
-    src: url("//db.onlinewebfonts.com/t/7797f6229b01fd22c7f0d6a5410db009.eot");
-    src: url("//db.onlinewebfonts.com/t/7797f6229b01fd22c7f0d6a5410db009.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/7797f6229b01fd22c7f0d6a5410db009.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/7797f6229b01fd22c7f0d6a5410db009.woff") format("woff"), url("//db.onlinewebfonts.com/t/7797f6229b01fd22c7f0d6a5410db009.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/7797f6229b01fd22c7f0d6a5410db009.svg#Munro") format("svg");
+    font-family: Munro;
+    src: url(fonts/Munro.ttf);
 }
 
 body {
-    font-family: munro;
+    color: white;
+    font-family: 'Munro';
 }
 
-.row{
-  background-color: #00A885;
+.row {
+    background-color: #2969B0;
     margin-left: 70px;
     margin-right: 70px;
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 5em;
 }
 
 h2 {
@@ -24,14 +24,14 @@ h2 {
 
 p {
     font-size: 22px;
-    color: black;
 }
 
 .navbar-fixed1 {
     position: relative;
-     height: 0px;
+    height: 0px;
     z-index: 997;
 }
+
 .fp-controlArrow.fp-next {
     right: -30px!important;
     border-width: 20px 0 20px 20px!important;
@@ -44,24 +44,38 @@ p {
     border-width: 20px 20px 20px 0!important;
     border-color: transparent black transparent transparent!important;
 }
-/*  main
-
-.pagebio{
-  margin-top : vh;
-}
-
-.stat{
-  margin-top : 50vh;
-}
-*/
-.socialogo{
-padding: 10px
-}
 
 
-.clear{
-  height: 150px;
+/*  main*/
+
+.socialogo {
+    padding: 10px
 }
+
+.socialogog {
+    padding: 15px;
+}
+
+.fa-arrow-up, .fa-arrow-down{
+  animation: blink 2s ease-in infinite;
+}
+@keyframes blink {
+  from, to { opacity: 1 }
+  50% { opacity: 0 }
+}
+
+.progress {
+    height: 5%;
+    font-size: 3em;
+    background-color: white;
+}
+
+.progress .determinate {
+color: black;
+    background-color: #FBCD39;
+
+}
+
 
 /* footer  */
 
@@ -71,7 +85,6 @@ footer {
     bottom: 0;
     z-index: 100
 }
-
 
 .red-text, .yellow-text, .green-text, .blue-text {
     font-size: 40px;
@@ -86,57 +99,42 @@ nav ul a:hover {
     background-color: rgba(0, 0, 0, 0);
     text-decoration: underline;
 }
-.slash{
-  margin-top: 2px;
-}
 
+.slash {
+    margin-top: 2px;
+    color: black;
+}
 
 
 /* media  */
 
-
 @media (max-width: 600px) {
     .row {
-      margin-left: 0;
-      margin-right: 0;
-      margin-bottom:0;    }
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+    .red-text, .yellow-text, .green-text, .blue-text {
+        font-size: 2em;
+    }
 
-      .red-text, .yellow-text, .green-text, .blue-text {
-          font-size: 25px;
-      }
+    h1 {
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 2.2em;
+    }
+
+    p {
+        font-size: 1.5em;
+    }
+
+    .progress_titles{
+        font-size: 0.2em;
+    }
+
+#fp-nav ul, .fp-slidesNav ul{
+display: none!important;
 }
-
-
-
-
-/* Histogram  */
-
-
-.chart {
-  display: table;
-  table-layout: fixed;
-  width: 60%;
-  max-width: 700px;
-  height: 200px;
-  margin: 0 auto;
-  background-size: 100% 50px;
-  background-position: left top;
-}
-.chart li {
-  display: table-cell;
-  vertical-align: bottom;
-  height: 400px;
-}
-.chart span {
-  margin: 0 1em;
-  display: block;
-  background: gold;
-  animation: draw 2s ease-in-out;
-}
-
-
-@keyframes draw {
-  0% {
-    height: 0;
-  }
 }
