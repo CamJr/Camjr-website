@@ -6,13 +6,9 @@
 body {
     color: white;
     font-family: 'Munro';
+
 }
 
-.row {
-    background-color: #2969B0;
-    margin-left: 70px;
-    margin-right: 70px;
-}
 
 h1 {
     font-size: 5em;
@@ -24,6 +20,16 @@ h2 {
 
 p {
     font-size: 22px;
+}
+
+a{
+  color: white;
+}
+
+.row {
+    background-color: #2969B0;
+    margin-left: 70px;
+    margin-right: 70px;
 }
 
 .navbar-fixed1 {
@@ -48,12 +54,11 @@ p {
 
 /*  main*/
 
-.socialogo {
-    padding: 10px
-}
-
 .socialogog {
     padding: 15px;
+}
+.card_social_logo{
+  color: black;
 }
 
 .fa-arrow-up, .fa-arrow-down{
@@ -68,6 +73,8 @@ p {
     height: 5%;
     font-size: 3em;
     background-color: white;
+    width: 50%;
+
 }
 
 .progress .determinate {
@@ -76,6 +83,9 @@ color: black;
 
 }
 
+.main_image_project{
+max-width: 25%;
+}
 
 /* footer  */
 
@@ -127,7 +137,7 @@ nav ul a:hover {
     }
 
     p {
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
 
     .progress_titles{
@@ -137,4 +147,16 @@ nav ul a:hover {
 #fp-nav ul, .fp-slidesNav ul{
 display: none!important;
 }
+
+.card.large {
+  height: 388px!important;
+      margin-right: -50%;
+      margin-left: -50%;
+
+}
+
+.main_image_project{
+width: 50%;
+}
+
 }
