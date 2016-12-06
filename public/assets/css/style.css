@@ -9,7 +9,6 @@ body {
 
 }
 
-
 h1 {
     font-size: 5em;
 }
@@ -18,12 +17,20 @@ h2 {
     font-size: 32px;
 }
 
+h3{
+  font-size: 25px;
+}
+
 p {
     font-size: 22px;
 }
 
 a{
   color: white;
+}
+
+.nav_title{
+  font-size: 3em!important;
 }
 
 .row {
@@ -39,16 +46,18 @@ a{
 }
 
 .fp-controlArrow.fp-next {
-    right: -30px!important;
+    right: 0px!important;
     border-width: 20px 0 20px 20px!important;
-    border-color: transparent transparent transparent black!important;
+    border-color: transparent transparent transparent white!important;
+
 }
 
 .fp-controlArrow.fp-prev {
-    left: -30px!important;
+    left: 0px!important;
     width: 0;
     border-width: 20px 20px 20px 0!important;
-    border-color: transparent black transparent transparent!important;
+    border-color: transparent white transparent transparent!important;
+
 }
 
 
@@ -74,7 +83,6 @@ a{
     font-size: 3em;
     background-color: white;
     width: 50%;
-
 }
 
 .progress .determinate {
@@ -82,6 +90,17 @@ color: black;
     background-color: #FBCD39;
 
 }
+
+.progress_titles{
+    padding-left: 50px;
+    margin-top: 5px;
+}
+
+.progress_pourcent{
+  margin-top: -53px;
+  margin-right: -45px;
+}
+
 
 .main_image_project{
 max-width: 25%;
@@ -97,7 +116,7 @@ footer {
 }
 
 .red-text, .yellow-text, .green-text, .blue-text {
-    font-size: 40px;
+    font-size: 2em;
 }
 
 .colorfooter {
@@ -141,8 +160,18 @@ nav ul a:hover {
     }
 
     .progress_titles{
-        font-size: 0.2em;
+        font-size: 0.3em;
+        padding-left: 50px;
+        padding-top: -10px;
+
     }
+
+
+.progress_pourcent{
+  display: none!important;
+
+  }
+
 
 #fp-nav ul, .fp-slidesNav ul{
 display: none!important;

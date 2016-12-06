@@ -1,13 +1,13 @@
 {
   "name": "mean-es6",
   "version": "0.0.1",
-  "description": "Mean starter kit",
+  "description": "CamJr",
   "main": "index.js",
   "scripts": {
     "start": "babel-node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Jean-Baptiste Pasquier",
+  "author": "",
   "license": "ISC",
   "dependencies": {
     "body-parser": "",

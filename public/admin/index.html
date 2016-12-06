@@ -1,0 +1,40 @@
+  <!DOCTYPE html>
+<html lang="en" ng-app='app'>
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="shortcut icon" href="../assets/img/logo.png">
+
+        <title>CamJr website</title>
+        <link type="text/css" rel="stylesheet" href="../vendor/materialize/bin/materialize.css" media="screen,projection"/>
+        <link rel="stylesheet" href="../assets/css/style.css">
+        <link rel="stylesheet" href="../vendor/components-font-awesome/css/font-awesome.min.css">
+
+    </head>
+    <body>
+
+        <ng-include src="'views/navbar.html'"></ng-include>
+
+        <div class="row">
+            <ng-include src="'views/main.html'"></ng-include>
+        </div>
+
+        <ng-include src="'views/footer.html'"></ng-include>
+
+        <script src="../vendor/jquery/dist/jquery.min.js"></script>
+        <!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
+        <script src="../vendors/jquery.easings.min.js"></script>
+
+        <!-- This following line is only necessary in the case of using the plugin option `scrollOverflow:true` -->
+
+        <script src="../vendor/materialize/bin/materialize.js"></script>
+
+        <script src="vendor/angular/angular.min.js"></script>
+
+        <script src="js/app.admin.js"></script>
+
+    </body>
+</html>
